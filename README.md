@@ -11,6 +11,9 @@ Application API for reserving parking spaces.
 ###User
 
 
+>User with username "admin" is have admin permissions
+
+
 **Registration**
 
 **POST** - `/api/v1/user/registration`
