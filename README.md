@@ -38,6 +38,7 @@ Fields:
 
 **Get user info**
 
+**Get all users info**
 **Only admin**
 
 **Get** - `/api/v1/user`
