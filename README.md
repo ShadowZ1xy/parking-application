@@ -8,7 +8,7 @@ Application API for reserving parking spaces.
 ## API endpoints
 
 
-###User
+### User
 
 
 >User with username "admin" is have admin permissions
@@ -66,7 +66,7 @@ Param:
 <br>
 
 
-###Parking slot
+### Parking slot
 
 
 **Create new parking slot**
@@ -138,7 +138,7 @@ Fields:
 
 
 
-###Parking session
+### Parking session
 
 
 
