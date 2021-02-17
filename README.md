@@ -42,6 +42,7 @@ Fields:
 
 **Get** - `/api/v1/user`
 
+<br>
 
 **Only admin**
 
