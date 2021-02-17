@@ -1,7 +1,7 @@
 # Parking application
 
 ### Description
-Application API for reserving parking spaces.
+API for reserving parking spaces.
 
 ---
 
