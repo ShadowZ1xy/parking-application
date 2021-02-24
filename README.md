@@ -1,14 +1,17 @@
 # Parking application
 
 ### Description
-Application API for reserving parking spaces.
+API for reserving parking spaces.
 
 ---
 
 ## API endpoints
 
 
-###User
+### User
+
+
+>User with username "admin" is have admin permissions
 
 
 **Registration**
@@ -38,10 +41,12 @@ Fields:
 
 **Get user info**
 
+**Get all users info**
 **Only admin**
 
 **Get** - `/api/v1/user`
 
+<br>
 
 **Only admin**
 
@@ -61,7 +66,7 @@ Param:
 <br>
 
 
-###Parking slot
+### Parking slot
 
 
 **Create new parking slot**
@@ -129,7 +134,12 @@ Fields:
 
 ---
 
-###Parking session
+<br>
+
+
+
+### Parking session
+
 
 
 **Create new parking session**
