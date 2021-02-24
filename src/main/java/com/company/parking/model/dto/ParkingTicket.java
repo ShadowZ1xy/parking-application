@@ -17,15 +17,7 @@ public class ParkingTicket {
     public ParkingTicket() {
     }
 
-    public ParkingTicket(Long ticketId, String userPublicName, Long slotId, LocalDateTime startAt, LocalDateTime endAt) {
-        this.ticketId = ticketId;
-        this.userPublicName = userPublicName;
-        this.slotId = slotId;
-        this.startAt = startAt;
-        this.endAt = endAt;
-    }
-
-    public static ParkingTicket createTicketBasedOnSession(ParkingSession session, Long slotId, User user) {
+    public ParkingTicket(ParkingSession session, Long slotId, User user) {
         ParkingTicket ticket = new ParkingTicket();
         ticket.setTicketId(session.getId());
         ticket.setSlotId(slotId);
@@ -33,7 +25,6 @@ public class ParkingTicket {
         ticket.setUserPublicName(user.getPublicName());
         ticket.setStartAt(session.getStartAt());
         ticket.setEndAt(session.getEndAt());
-        return ticket;
     }
 
     public Long getUserId() {

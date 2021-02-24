@@ -63,10 +63,7 @@ public class ParkingSessionServiceImpl implements ParkingSessionService {
         User user = userUtil.currentUser();
         setupParkingSessionFromRequest(request, parkingSlot, parkingSession, user);
         ParkingSession sessionFromDb = sessionRepository.save(parkingSession);
-        return ParkingTicket.createTicketBasedOnSession(
-                sessionFromDb,
-                parkingSlot.getId(),
-                user);
+        return new ParkingTicket(sessionFromDb, parkingSlot.getId(), user);
     }
 
     @Override

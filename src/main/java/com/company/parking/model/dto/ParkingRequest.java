@@ -29,13 +29,6 @@ public class ParkingRequest {
         this.endAt = endAt;
     }
 
-    public ParkingRequest(Long slotId, LocalDateTime startAt, Integer durationHours, Integer durationMinutes) {
-        this.slotId = slotId;
-        this.startAt = startAt;
-        this.durationHours = durationHours;
-        this.durationMinutes = durationMinutes;
-    }
-
     public LocalDateTime getEndAt() {
         return endAt;
     }

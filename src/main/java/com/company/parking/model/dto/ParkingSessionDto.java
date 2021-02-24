@@ -16,6 +16,9 @@ public class ParkingSessionDto {
     private boolean isExpired;
     private boolean isActive;
 
+    public ParkingSessionDto() {
+    }
+
     public ParkingSessionDto(ParkingSession parkingSession, ParkingSessionService service) {
         this.sessionId = parkingSession.getId();
         this.userId = parkingSession.getUser().getId();
@@ -26,10 +29,6 @@ public class ParkingSessionDto {
         this.isExpired = service.isExpired(parkingSession);
         this.isActive = service.isActive(parkingSession);
     }
-
-    public ParkingSessionDto() {
-    }
-
 
     public Long getSessionId() {
         return sessionId;
