@@ -8,14 +8,14 @@ import java.util.TimeZone;
 
 @Component
 public class TimeTool {
-    public String applicationTimeZone = "Asia/Yerevan";
+    public final String applicationTimeZone = "Asia/Yerevan";
 
     public LocalDateTime getCurrentTime() {
         return LocalDateTime.now(
                 TimeZone.getTimeZone(applicationTimeZone).toZoneId());
     }
 
-    public boolean checkIfDateIsBetweenOtherTwoDate(LocalDateTime date, LocalDateTime start, LocalDateTime end) {
+    private boolean checkIfDateIsBetweenOtherTwoDate(LocalDateTime date, LocalDateTime start, LocalDateTime end) {
         return (date.isAfter(start) || date.isEqual(start)) &&
                 (date.isBefore(end) || date.isEqual(end));
     }
